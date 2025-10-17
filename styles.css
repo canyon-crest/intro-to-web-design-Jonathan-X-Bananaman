@@ -1,11 +1,17 @@
 body{
-    background-color: rgb(0,0,0);
+    background-color: rgb(255,255,0);
     color: #000;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 #container{
-    width: 700px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 30 auto;
+    padding: 10px;
+    background-color: rgb(225,225,50);
+}
+#container2{
+    width: 800px;
+    margin: 30 auto;
     padding: 30px;
     background-color: rgb(225,225,50);
 }
@@ -22,9 +28,8 @@ h1{
     border: #000, solid, 3px;
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 10px;
     text-align: center;
-    margin: 0px auto;
+    margin: 10px auto;
     width: 50%;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 235%;
@@ -38,6 +43,11 @@ h3{
     border-left: ridge 10px #000;
     border-radius: 15px;
     padding-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ee8;
+    width:fit-content;
+    padding-right: 7px
+
 }
 img{
     float:left;
@@ -51,11 +61,11 @@ p{
     line-height: 2em;
 }
 a:link{
-    color: rgb(0, 182, 182);
+    color: rgb(30, 125, 122);
     text-decoration: none;
 }
 a:visited{
-    color:rgb(30, 125, 122);
+    color:rgb(28, 100, 73);
 }
 a:hover{
     color: rgb(40, 95, 223);
@@ -66,9 +76,58 @@ a:hover{
     float:right;
     margin-left: 10px;
 }
+#sidebar h3{
+    padding: 4px;
+    width: 180px;
+    border-left:none;
+    background:none;
+    text-decoration:underline 2px rgb(98, 90, 4);
+}
+#sidebar{
+    float:left;
+    width:150px;
+    margin-right: 7px;
+    
+}
 /*CLASS RULE*/
 .highlight{
     font-weight: bold;
     background-color: aqua;
     font-style: bold;
+}
+
+@media(max-width:1200px){
+    #container2{
+        width: 800px;
+    }
+    h1{
+        background-color: rgb(218, 165, 32);
+    }
+}
+@media(max-width:992px){
+    #container2{
+        width: 90%;
+    }
+    img{
+        width:200px
+    }
+}
+@media(max-width:700px){
+    #container2{
+        width: 70%;
+    }
+    #container{
+        width: 70%;
+    }
+    h1{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    img{
+        width: 60%;
+        margin: 0 auto;
+        margin-right: 10px;
+    }
 }
