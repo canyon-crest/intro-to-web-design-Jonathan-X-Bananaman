@@ -56,9 +56,9 @@ img{
     margin-right: 10px;
     border: #ee8,solid,2px;
     border-radius: 10px;
-    filter: drop-shadow(-5px 5px 7px rgb(181, 181, 100));
     filter: saturate(200%);
     filter:contrast(120%);
+    filter: drop-shadow(-5px 5px 7px rgb(181, 181, 100));
 }
 p{
     margin-bottom: 10px;
@@ -148,7 +148,7 @@ a:hover{
     #pic2{
         float:none;
         width: 85%;
-        margin:auto;
+        margin:5px auto;
         display:block;
     }
 }
